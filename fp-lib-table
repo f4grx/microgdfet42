@@ -1,0 +1,3 @@
+(fp_lib_table
+  (lib (name microgdfet)(type KiCad)(uri "$(KIPRJMOD)/microgdfet.pretty")(options "")(descr ""))
+)

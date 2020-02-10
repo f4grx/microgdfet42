@@ -1,0 +1,571 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title "Microsized GoodFET"
+Date "vendredi 26 septembre 2014"
+Rev "01"
+Comp "F4GRX"
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L microgdfet:USB_MICROB J1
+U 1 1 5423EDEE
+P 1750 6000
+F 0 "J1" H 1750 6300 60  0000 C CNN
+F 1 "USB_MICROB" H 1750 6200 60  0000 C CNN
+F 2 "microgdfet:USB_MICROB_MOLEX" H 1750 6000 60  0001 C CNN
+F 3 "" H 1750 6000 60  0000 C CNN
+	1    1750 6000
+	1    0    0    -1  
+$EndComp
+$Comp
+L microgdfet:MSP430F2618_64 U1
+U 1 1 54240B41
+P 6600 2800
+F 0 "U1" H 6750 3250 60  0000 C CNN
+F 1 "MSP430F2618_64" H 6750 3150 60  0000 C CNN
+F 2 "microgdfet:TQFP64" H 5800 3700 60  0001 C CNN
+F 3 "" H 5800 3700 60  0000 C CNN
+	1    6600 2800
+	1    0    0    -1  
+$EndComp
+$Comp
+L microgdfet:FT232R_SSOP U2
+U 1 1 542416AC
+P 3800 5800
+F 0 "U2" H 3800 6700 60  0000 C CNN
+F 1 "FT232R_SSOP" H 3800 6600 60  0000 C CNN
+F 2 "microgdfet:TSSOP28" H 3800 5800 60  0001 C CNN
+F 3 "" H 3800 5800 60  0000 C CNN
+	1    3800 5800
+	1    0    0    -1  
+$EndComp
+$Comp
+L microgdfet:GND #PWR01
+U 1 1 54241791
+P 1950 6750
+F 0 "#PWR01" H 1950 6750 30  0001 C CNN
+F 1 "GND" H 1950 6680 30  0001 C CNN
+F 2 "" H 1950 6750 60  0000 C CNN
+F 3 "" H 1950 6750 60  0000 C CNN
+	1    1950 6750
+	1    0    0    -1  
+$EndComp
+NoConn ~ 1850 6550
+NoConn ~ 3250 5850
+NoConn ~ 4200 5550
+NoConn ~ 3250 6450
+NoConn ~ 3250 6350
+NoConn ~ 3250 6250
+NoConn ~ 3250 5650
+NoConn ~ 4200 5250
+NoConn ~ 4200 5150
+$Comp
+L microgdfet:GND #PWR02
+U 1 1 54241897
+P 4200 6150
+F 0 "#PWR02" H 4200 6150 30  0001 C CNN
+F 1 "GND" H 4200 6080 30  0001 C CNN
+F 2 "" H 4200 6150 60  0000 C CNN
+F 3 "" H 4200 6150 60  0000 C CNN
+	1    4200 6150
+	0    -1   -1   0   
+$EndComp
+$Comp
+L microgdfet:GND #PWR03
+U 1 1 542418A8
+P 4200 5450
+F 0 "#PWR03" H 4200 5450 30  0001 C CNN
+F 1 "GND" H 4200 5380 30  0001 C CNN
+F 2 "" H 4200 5450 60  0000 C CNN
+F 3 "" H 4200 5450 60  0000 C CNN
+	1    4200 5450
+	0    -1   -1   0   
+$EndComp
+$Comp
+L microgdfet:GND #PWR04
+U 1 1 542418B6
+P 3250 5750
+F 0 "#PWR04" H 3250 5750 30  0001 C CNN
+F 1 "GND" H 3250 5680 30  0001 C CNN
+F 2 "" H 3250 5750 60  0000 C CNN
+F 3 "" H 3250 5750 60  0000 C CNN
+	1    3250 5750
+	0    1    1    0   
+$EndComp
+$Comp
+L microgdfet:CONN_2x7 P1
+U 1 1 54241CE2
+P 9650 5100
+F 0 "P1" H 9650 5550 60  0000 C CNN
+F 1 "CONN_2x7" H 9650 5450 60  0000 C CNN
+F 2 "microgdfet:PIN_ARRAY_7X2_SIDE" H 9850 4850 60  0001 C CNN
+F 3 "" H 9850 4850 60  0000 C CNN
+	1    9650 5100
+	1    0    0    -1  
+$EndComp
+Text Label 10000 4900 0    45   ~ 0
+VCC
+Wire Wire Line
+	1950 6550 1950 6650
+Wire Wire Line
+	1950 6650 2350 6650
+Wire Wire Line
+	2350 6650 2350 6250
+Wire Wire Line
+	2350 6250 2250 6250
+Connection ~ 1950 6650
+Wire Wire Line
+	1750 6550 1750 7100
+Wire Wire Line
+	1750 7100 4300 7100
+Wire Wire Line
+	4300 7100 4300 6450
+Wire Wire Line
+	4300 6450 4200 6450
+Wire Wire Line
+	1650 6550 1650 7200
+Wire Wire Line
+	1650 7200 4400 7200
+Wire Wire Line
+	4400 7200 4400 6350
+Wire Wire Line
+	4400 6350 4200 6350
+Wire Wire Line
+	9800 4900 10000 4900
+Wire Wire Line
+	9500 4900 9300 4900
+Wire Wire Line
+	9500 5000 9300 5000
+Wire Wire Line
+	9500 5100 9300 5100
+Wire Wire Line
+	9500 5200 9300 5200
+Wire Wire Line
+	9500 5300 9300 5300
+Wire Wire Line
+	9500 5400 9300 5400
+Wire Wire Line
+	9800 5500 10000 5500
+Wire Wire Line
+	9800 5400 10000 5400
+Wire Wire Line
+	9800 5200 10000 5200
+Wire Wire Line
+	9800 5000 10000 5000
+Text Label 10000 5000 0    45   ~ 0
+VCC
+Text Label 10000 5200 0    45   ~ 0
+TST
+Text Label 10000 5400 0    45   ~ 0
+RXIN
+Text Label 10000 5500 0    45   ~ 0
+TXOUT
+Text Label 9300 5400 0    45   ~ 0
+~RST~
+Text Label 9300 5300 0    45   ~ 0
+GND
+Text Label 9300 5200 0    45   ~ 0
+TCK
+Text Label 9300 5100 0    45   ~ 0
+TMS
+Text Label 9300 5000 0    45   ~ 0
+TDI
+Text Label 9300 4900 0    45   ~ 0
+TDO
+Wire Wire Line
+	9500 5500 9300 5500
+Wire Wire Line
+	9800 5100 10000 5100
+Wire Wire Line
+	9800 5300 10000 5300
+Text Label 10000 5100 0    45   ~ 0
+GND
+Text Label 10000 5300 0    45   ~ 0
+GND
+Text Label 9300 5500 0    45   ~ 0
+GND
+Wire Wire Line
+	6750 3650 6750 3900
+Text Label 6750 3900 3    45   ~ 0
+~RST~
+Wire Wire Line
+	8300 3400 8500 3400
+Text Label 8500 3400 0    45   ~ 0
+TXOUT
+Wire Wire Line
+	8300 3300 8500 3300
+Text Label 8500 3300 0    45   ~ 0
+RXIN
+Wire Wire Line
+	8300 3200 8500 3200
+Text Label 8500 3200 0    45   ~ 0
+TST
+Wire Wire Line
+	8300 3500 8700 3500
+Text Label 8700 3500 0    45   ~ 0
+BSL_PCOUTMCUIN
+Text Label 6350 3900 3    45   ~ 0
+BSL_PCOUTMCUIN
+Wire Wire Line
+	6350 3900 6350 3650
+Text Label 3050 5150 2    45   ~ 0
+BSL_PCOUTMCUIN
+Wire Wire Line
+	3050 5150 3250 5150
+Wire Wire Line
+	3250 5550 3050 5550
+Text Label 3050 5550 2    45   ~ 0
+BSL_PCINMCUOUT
+Text Label 5000 3200 2    45   ~ 0
+BSL_PCINMCUOUT
+Wire Wire Line
+	5000 3200 5200 3200
+Text Label 7350 3900 3    45   ~ 0
+BSL_PCINMCUOUT
+Wire Wire Line
+	7350 3900 7350 3650
+Wire Wire Line
+	6450 1550 6450 1350
+Wire Wire Line
+	6550 1550 6550 1350
+Text Label 6450 1350 1    45   ~ 0
+BSL_RST
+Text Label 6550 1350 1    45   ~ 0
+BSL_TCK
+Wire Wire Line
+	3250 5350 3050 5350
+Wire Wire Line
+	3250 5250 3050 5250
+Text Label 3050 5350 2    45   ~ 0
+BSL_TCK
+Text Label 3050 5250 2    45   ~ 0
+BSL_RST
+Wire Wire Line
+	1550 6550 1550 6800
+Wire Wire Line
+	1550 6800 1050 6800
+Text Label 1050 6800 0    45   ~ 0
+VBUS
+Wire Wire Line
+	4200 5950 4400 5950
+Text Label 4400 5950 0    45   ~ 0
+VBUS
+$Comp
+L microgdfet:GND #PWR05
+U 1 1 54242CAC
+P 6050 1550
+F 0 "#PWR05" H 6050 1550 30  0001 C CNN
+F 1 "GND" H 6050 1480 30  0001 C CNN
+F 2 "" H 6050 1550 60  0000 C CNN
+F 3 "" H 6050 1550 60  0000 C CNN
+	1    6050 1550
+	-1   0    0    1   
+$EndComp
+$Comp
+L microgdfet:GND #PWR06
+U 1 1 54242CC3
+P 5950 1550
+F 0 "#PWR06" H 5950 1550 30  0001 C CNN
+F 1 "GND" H 5950 1480 30  0001 C CNN
+F 2 "" H 5950 1550 60  0000 C CNN
+F 3 "" H 5950 1550 60  0000 C CNN
+	1    5950 1550
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	8300 2100 8500 2100
+Wire Wire Line
+	8300 2200 8500 2200
+Wire Wire Line
+	8300 2300 8500 2300
+Wire Wire Line
+	8300 2400 8500 2400
+Text Label 8500 2100 0    45   ~ 0
+TCK
+Text Label 8500 2200 0    45   ~ 0
+TDO
+Text Label 8500 2300 0    45   ~ 0
+TDI
+Text Label 8500 2400 0    45   ~ 0
+TMS
+NoConn ~ 6650 1550
+NoConn ~ 6750 1550
+NoConn ~ 6850 1550
+NoConn ~ 6950 1550
+NoConn ~ 7050 1550
+NoConn ~ 7150 1550
+NoConn ~ 7250 1550
+NoConn ~ 7350 1550
+NoConn ~ 8300 2000
+NoConn ~ 8300 2500
+NoConn ~ 8300 2600
+NoConn ~ 8300 2700
+NoConn ~ 8300 2800
+NoConn ~ 8300 2900
+NoConn ~ 8300 3000
+NoConn ~ 8300 3100
+NoConn ~ 7250 3650
+NoConn ~ 7150 3650
+NoConn ~ 7050 3650
+NoConn ~ 6950 3650
+NoConn ~ 6850 3650
+NoConn ~ 6650 3650
+NoConn ~ 6550 3650
+NoConn ~ 6450 3650
+NoConn ~ 6250 3650
+NoConn ~ 6150 3650
+NoConn ~ 6050 3650
+NoConn ~ 5950 3650
+NoConn ~ 5850 3650
+NoConn ~ 5200 3300
+NoConn ~ 5200 3400
+NoConn ~ 5200 3500
+Wire Wire Line
+	4750 3100 5200 3100
+Text Label 5000 3100 2    45   ~ 0
+LED
+NoConn ~ 5200 2100
+NoConn ~ 5200 2200
+NoConn ~ 5200 2300
+NoConn ~ 5200 2400
+NoConn ~ 5200 2500
+NoConn ~ 5200 2600
+NoConn ~ 5200 2700
+NoConn ~ 5200 2800
+NoConn ~ 5200 2900
+NoConn ~ 5200 3000
+NoConn ~ 6150 1550
+NoConn ~ 6250 1550
+NoConn ~ 6350 1550
+$Comp
+L microgdfet:GND #PWR07
+U 1 1 54243215
+P 4200 5850
+F 0 "#PWR07" H 4200 5850 30  0001 C CNN
+F 1 "GND" H 4200 5780 30  0001 C CNN
+F 2 "" H 4200 5850 60  0000 C CNN
+F 3 "" H 4200 5850 60  0000 C CNN
+	1    4200 5850
+	0    -1   -1   0   
+$EndComp
+NoConn ~ 4200 6050
+Wire Wire Line
+	4200 5750 4850 5750
+Wire Wire Line
+	4200 5650 4850 5650
+Text Label 4400 5750 0    45   ~ 0
+RXLED
+Text Label 4400 5650 0    45   ~ 0
+TXLED
+$Comp
+L microgdfet:GND #PWR08
+U 1 1 542433F5
+P 4200 5350
+F 0 "#PWR08" H 4200 5350 30  0001 C CNN
+F 1 "GND" H 4200 5280 30  0001 C CNN
+F 2 "" H 4200 5350 60  0000 C CNN
+F 3 "" H 4200 5350 60  0000 C CNN
+	1    4200 5350
+	0    -1   -1   0   
+$EndComp
+Wire Wire Line
+	3250 5450 3050 5450
+Text Label 3050 5450 2    45   ~ 0
+VCC
+NoConn ~ 3250 6150
+NoConn ~ 3250 6050
+NoConn ~ 3250 5950
+$Comp
+L microgdfet:CSMALL C1
+U 1 1 5424365B
+P 5500 1350
+F 0 "C1" H 5525 1400 30  0000 L CNN
+F 1 "100n" H 5525 1300 30  0000 L CNN
+F 2 "microgdfet:0805" H 5500 1350 60  0001 C CNN
+F 3 "" H 5500 1350 60  0000 C CNN
+	1    5500 1350
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5850 1150 5850 1550
+Wire Wire Line
+	5150 1150 5500 1150
+Wire Wire Line
+	5500 1150 5500 1250
+Wire Wire Line
+	5200 2000 5150 2000
+Wire Wire Line
+	5150 2000 5150 1150
+Connection ~ 5500 1150
+$Comp
+L microgdfet:GND #PWR09
+U 1 1 54243748
+P 5500 1450
+F 0 "#PWR09" H 5500 1450 30  0001 C CNN
+F 1 "GND" H 5500 1380 30  0001 C CNN
+F 2 "" H 5500 1450 60  0000 C CNN
+F 3 "" H 5500 1450 60  0000 C CNN
+	1    5500 1450
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4200 6250 4850 6250
+Text Label 4400 6250 0    45   ~ 0
+3V3OUT
+Text Label 5200 1150 0    45   ~ 0
+VCC
+$Comp
+L microgdfet:LED D2
+U 1 1 54244699
+P 5250 5550
+F 0 "D2" H 5250 5650 50  0000 C CNN
+F 1 "LED" H 5250 5450 50  0000 C CNN
+F 2 "microgdfet:0805" H 5250 5550 60  0001 C CNN
+F 3 "" H 5250 5550 60  0000 C CNN
+	1    5250 5550
+	-1   0    0    1   
+$EndComp
+$Comp
+L microgdfet:LED D3
+U 1 1 54244704
+P 5250 5850
+F 0 "D3" H 5250 5950 50  0000 C CNN
+F 1 "LED" H 5250 5750 50  0000 C CNN
+F 2 "microgdfet:0805" H 5250 5850 60  0001 C CNN
+F 3 "" H 5250 5850 60  0000 C CNN
+	1    5250 5850
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	5050 5550 4850 5550
+Wire Wire Line
+	4850 5550 4850 5650
+Wire Wire Line
+	5050 5850 4850 5850
+Wire Wire Line
+	4850 5850 4850 5750
+Wire Wire Line
+	5550 5550 5450 5550
+Wire Wire Line
+	5550 5850 5450 5850
+$Comp
+L microgdfet:RSMALL R2
+U 1 1 542448AC
+P 5250 5250
+F 0 "R2" H 5250 5300 30  0000 C CNN
+F 1 "330" H 5250 5250 30  0000 C CNN
+F 2 "microgdfet:0805" H 5250 5250 60  0001 C CNN
+F 3 "" H 5250 5250 60  0000 C CNN
+	1    5250 5250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	5550 5250 5400 5250
+Connection ~ 5550 5550
+Wire Wire Line
+	5550 5250 5550 5550
+Wire Wire Line
+	5100 5250 4900 5250
+Text Label 4900 5250 0    45   ~ 0
+VCC
+$Comp
+L microgdfet:RSMALL R1
+U 1 1 54244DAC
+P 4450 3000
+F 0 "R1" H 4450 3050 30  0000 C CNN
+F 1 "330" H 4450 3000 30  0000 C CNN
+F 2 "microgdfet:0805" H 4450 3000 60  0001 C CNN
+F 3 "" H 4450 3000 60  0000 C CNN
+	1    4450 3000
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	4750 3100 4750 3000
+Wire Wire Line
+	4750 3000 4600 3000
+$Comp
+L microgdfet:LED D1
+U 1 1 54244E8C
+P 4000 3000
+F 0 "D1" H 4000 3100 50  0000 C CNN
+F 1 "LED" H 4000 2900 50  0000 C CNN
+F 2 "microgdfet:0805" H 4000 3000 60  0001 C CNN
+F 3 "" H 4000 3000 60  0000 C CNN
+	1    4000 3000
+	-1   0    0    1   
+$EndComp
+$Comp
+L microgdfet:GND #PWR010
+U 1 1 54244F22
+P 3700 3000
+F 0 "#PWR010" H 3700 3000 30  0001 C CNN
+F 1 "GND" H 3700 2930 30  0001 C CNN
+F 2 "" H 3700 3000 60  0000 C CNN
+F 3 "" H 3700 3000 60  0000 C CNN
+	1    3700 3000
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	3700 3000 3800 3000
+Wire Wire Line
+	4200 3000 4300 3000
+$Comp
+L microgdfet:CSMALL C2
+U 1 1 542457A2
+P 4850 6500
+F 0 "C2" H 4875 6550 30  0000 L CNN
+F 1 "100n" H 4875 6450 30  0000 L CNN
+F 2 "microgdfet:0805" H 4850 6500 60  0001 C CNN
+F 3 "" H 4850 6500 60  0000 C CNN
+	1    4850 6500
+	-1   0    0    1   
+$EndComp
+Wire Wire Line
+	4850 6250 4850 6400
+$Comp
+L microgdfet:GND #PWR011
+U 1 1 542457A9
+P 4850 6600
+F 0 "#PWR011" H 4850 6600 30  0001 C CNN
+F 1 "GND" H 4850 6530 30  0001 C CNN
+F 2 "" H 4850 6600 60  0000 C CNN
+F 3 "" H 4850 6600 60  0000 C CNN
+	1    4850 6600
+	1    0    0    -1  
+$EndComp
+$Comp
+L microgdfet:RSMALL R3
+U 1 1 54245925
+P 5100 6250
+F 0 "R3" H 5100 6300 30  0000 C CNN
+F 1 "0R" H 5100 6250 30  0000 C CNN
+F 2 "microgdfet:0805" H 5100 6250 60  0001 C CNN
+F 3 "" H 5100 6250 60  0000 C CNN
+	1    5100 6250
+	1    0    0    -1  
+$EndComp
+Connection ~ 4850 6250
+Wire Wire Line
+	5250 6250 5450 6250
+Text Label 5450 6250 0    45   ~ 0
+VCC
+Text Label 2750 7100 0    60   ~ 0
+USBDP
+Text Label 2750 7200 0    60   ~ 0
+USBDM
+Wire Wire Line
+	1950 6650 1950 6750
+Wire Wire Line
+	5500 1150 5850 1150
+Wire Wire Line
+	5550 5550 5550 5850
+Wire Wire Line
+	4850 6250 4950 6250
+$EndSCHEMATC

@@ -1,0 +1,9 @@
+PCB
+MSP430F2618
+FT232R
+Socket USB-micro B
+HE10-14
+Heatshrink tube
+100 nF x 2
+330 ohms x 2
+LED x 3
